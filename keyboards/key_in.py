@@ -3,16 +3,16 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 def key1():
     keyboard1 = InlineKeyboardMarkup(row_width=1)
-    button1 = InlineKeyboardButton('Виды самолётов', callback_data='go2')
-    button2 = InlineKeyboardButton('Танки', callback_data='go3')
-    button3 = InlineKeyboardButton('Машины', callback_data='go4')
+    button1 = InlineKeyboardButton('Виды самолётов', callback_data='go_to_2')
+    button2 = InlineKeyboardButton('Танки', callback_data='go_to_3')
+    button3 = InlineKeyboardButton('Машины', callback_data='go_to_4')
     keyboard1.add(button1, button2, button3)
     return keyboard1
 
 
 def key2():
     keyboard2 = InlineKeyboardMarkup(row_width=2)
-    button4 = InlineKeyboardButton('Вернуться назад', callback_data='go1')
+    button4 = InlineKeyboardButton('Вернуться назад', callback_data='go_to_1')
     button5 = InlineKeyboardButton('Истребители', url='https://ru.m.wikipedia.org/wiki/Истребители_(фильм)')
     button6 = InlineKeyboardButton('Истрибители-перехватчики', url='https://ru.wikipedia.org/wiki/Перехватчик')
     button7 = InlineKeyboardButton('Истребители-бомбардировщики', url='https://ru.wikipedia.org/wiki/Истребитель-бомбардировщик')
@@ -28,7 +28,7 @@ def key2():
 
 def key3():
     keyboard3 = InlineKeyboardMarkup(row_width=2)
-    button14 = InlineKeyboardButton('Вернуться назад', callback_data='go1')
+    button14 = InlineKeyboardButton('Вернуться назад', callback_data='go_to_1')
     button15 = InlineKeyboardButton('Русские танки', url='https://ru.wikipedia.org/wiki/Список_советской_и_российской_серийной_бронетехники')
     keyboard3.add(button14, button15)
     return keyboard3
@@ -36,7 +36,7 @@ def key3():
 
 def key4():
     keyboard4 = InlineKeyboardMarkup(row_width=2)
-    button16 = InlineKeyboardButton('Вернуться назад', callback_data='go1')
+    button16 = InlineKeyboardButton('Вернуться назад', callback_data='go_to_1')
     button17 = InlineKeyboardButton('Военные русские машины', url='https://вооружение.рф/armaments/boevye-mashiny/')
     keyboard4.add(button16, button17)
     return keyboard4
